@@ -1,3 +1,7 @@
+.belowHeader {
+	display: inline-block;
+}
+
 .article {
 	position: relative;
 	right: 5vw;
@@ -8,4 +12,48 @@
 	width: 80vw;
 	position: relative;
 	left: 5vw;
+}
+
+.upvote {
+	font-size: 40px;
+	position: relative;
+	left: 5%;
+	color: orange;
+}
+
+.upvote:hover {
+	color: orange;
+}
+
+.commentSection {
+	position: relative;
+	margin-top: 100px;
+	margin-bottom: 50px;
+	background-color: red;
+	width: 80vw;
+}
+
+.textBox {
+	width: 80vw;
+}
+
+.comment-wrapper .panel-body {
+	position: relative;
+	left: 25%;
+	margin-top: 100px;
+}
+
+.comment-wrapper .media-list .media img {
+    width:64px;
+    height:64px;
+    border:2px solid #e5e7e8;
+}
+
+.comment-wrapper .media-list .media {
+    border-bottom:1px dashed #efefef;
+    margin-bottom:25px;
+}
+
+textarea {
+	text-align: center;
 }

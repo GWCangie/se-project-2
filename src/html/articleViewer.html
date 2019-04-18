@@ -9,7 +9,7 @@
     	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     	<link href="../css/page_design.css" rel="stylesheet" type="text/css"/>
     	<link href="../css/articleViewer.css" rel="stylesheet" type="text/css"/>
-		<script type="text/javascript" src="../js/Categories.js"></script>
+		<script type="text/javascript" src="../js/gen_functions.js"></script>
 		<title>Article</title>
 	</head>
 	<body>
@@ -44,9 +44,12 @@
 
 	<!-- area below the header/navbar -->
 	<div class="belowHeader">
-		<br>
+		
 		<center>
 		<div class="article">
+			<button id="vote" class="btn upvote" onclick="change1()">&#9734;</button>
+			<br>
+			<br>
 			<!-- article viewer starts here -->
 			<h1 class="display-5">Article Title</h1>
 			<br>
@@ -63,6 +66,101 @@
 				To provide you with a light at the end of the tunnel if you recently installed Linux and are questioning the move, keep in mind that besides the software being free forever, you can install some variant of the operating system on virtually any device, which should make your efforts worthwhile over the long haul.
 			</article>
 		</div>
+
+		<div class="row bootstrap snippets">
+		    <div class="col-md-8 col-md-offset-2 col-sm-12">
+		        <div class="comment-wrapper">
+		            <div class="panel panel-info">
+		                <div class="panel-body">
+		                    <textarea class="form-control" placeholder="write a comment..." rows="3"></textarea>
+		                    <br>
+		                    <button type="button" class="btn btn-info pull-right">Post</button>
+		                    <div class="clearfix"></div>
+		                    <hr>
+		                    <ul class="media-list jumbotron">
+		                        <div class="media">
+		                            <div class="media-body">
+		                                <span class="text-muted">
+		                                    <small class="text-muted">30 min ago</small>
+		                                </span>
+		                                <p>
+		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                                    Lorem ipsum dolor sit amet.
+		                                </p>
+		                            </div>
+		                        </div>
+		                        <hr>
+		                        <div class="media">
+		                            <div class="media-body">
+		                                <span class="text-muted">
+		                                    <small class="text-muted">30 min ago</small>
+		                                </span>
+		                                <p>
+		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                                    Lorem ipsum dolor adipiscing elit.
+		                                </p>
+		                            </div>
+		                        </div>
+		                        <hr>
+		                        <div class="media">
+		                            <div class="media-body">
+		                                <span class="text-muted">
+		                                    <small class="text-muted">30 min ago</small>
+		                                </span>
+		                                <p>
+		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                                </p>
+		                            </div>
+		                        </div>
+		                        <hr>
+		                        <div class="media">
+		                            <div class="media-body">
+		                                <span class="text-muted">
+		                                    <small class="text-muted">30 min ago</small>
+		                                </span>
+		                                <p>
+		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                                </p>
+		                            </div>
+		                        </div>
+		                        <hr>
+		                        <div class="media">
+		                            <div class="media-body">
+		                                <span class="text-muted">
+		                                    <small class="text-muted">30 min ago</small>
+		                                </span>
+		                                <p>
+		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                                </p>
+		                            </div>
+		                        </div>
+		                        <hr>
+		                        <div class="media">
+		                            <div class="media-body">
+		                                <span class="text-muted">
+		                                    <small class="text-muted">30 min ago</small>
+		                                </span>
+		                                <p>
+		                                    Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		                                </p>
+		                            </div>
+		                        </div>
+		                    </ul>
+		                </div>
+		            </div>
+		        </div>
+
+		    </div>
+		</div>
+
+		<!--
+		<div class="commentSection">
+			<button>Add comment</button>
+		</div>
+		<div class="form-group textBox">
+   	 		<label for="exampleFormControlTextarea1">Comment below:</label>
+    		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+  		</div> -->
 		</center>	
 	</div>
 	<!-- end below header -->
