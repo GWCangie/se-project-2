@@ -26,11 +26,8 @@
 }
 
 .commentSection {
-	position: relative;
-	margin-top: 100px;
 	margin-bottom: 50px;
-	background-color: red;
-	width: 80vw;
+	width: 60vw;
 }
 
 .textBox {
@@ -39,7 +36,7 @@
 
 .comment-wrapper .panel-body {
 	position: relative;
-	left: 25%;
+	left: 34.5%;
 	margin-top: 100px;
 }
 
