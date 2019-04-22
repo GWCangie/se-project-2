@@ -9,7 +9,7 @@
     	<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
     	<link href="../css/page_design.css" rel="stylesheet" type="text/css"/>
     	<link href="../css/articleViewer.css" rel="stylesheet" type="text/css"/>
-		<script type="text/javascript" src="../js/gen_functions.js"></script>
+		<script type="text/javascript" rel="script" src="../js/gen_functions.js" defer></script>
 		<title>Article</title>
 	</head>
 	<body>
@@ -44,7 +44,7 @@
 
 	<!-- area below the header/navbar -->
 	<div class="belowHeader">
-		
+
 		<center>
 		<div class="article">
 			<button id="vote" class="btn upvote" onclick="change1()">&#9734;</button>
@@ -72,12 +72,12 @@
 		        <div class="comment-wrapper">
 		            <div class="panel panel-info">
 		                <div class="panel-body">
-		                    <textarea class="form-control" placeholder="write a comment..." rows="3"></textarea>
+		                    <textarea class="form-control" id="comment-box" rows="3" required>write a comment... </textarea>
 		                    <br>
-		                    <button type="button" class="btn btn-info pull-right">Post</button>
+		                    <button id="comment-button" type="button" class="btn_btn-info_pull-right">Post</button>
 		                    <div class="clearfix"></div>
 		                    <hr>
-		                    <ul class="media-list jumbotron">
+		                    <ul class="media-list jumbotron" id="comment-section">
 		                        <div class="media">
 		                            <div class="media-body">
 		                                <span class="text-muted">
@@ -145,6 +145,7 @@
 		                                </p>
 		                            </div>
 		                        </div>
+														<hr>
 		                    </ul>
 		                </div>
 		            </div>
@@ -161,7 +162,7 @@
    	 		<label for="exampleFormControlTextarea1">Comment below:</label>
     		<textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
   		</div> -->
-		</center>	
+		</center>
 	</div>
 	<!-- end below header -->
 
