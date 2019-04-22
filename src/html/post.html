@@ -24,7 +24,7 @@
 		<script src="../quill-image-resize-module-master/image-resize.min.js"></script>
 
 		<!-- for grabbing contents of editor -->
-		<!--<script type="text/javascript" src="../js/quill_functions.js" defer></script>-->
+		<!-- <script type="text/javascript" src="../js/gen_functions.js" defer></script> -->
 
 		<title>Post</title>
 	</head>
@@ -103,18 +103,17 @@
 				  	theme: 'snow'
 				});
 
-				quill.setText('Hello world!!');
+				quill.setText('Type your work here.');
 
 			</script>
 			<!-- for grabbing contents of editor -->
-			<script type="text/javascript" src="../js/quill_functions.js"></script>
+			<script type="text/javascript" src="../js/gen_functions.js"></script>
 			<br>
-
-			<div class="postButtons">
-				<button class="submit" onclick="saveEditorContents()">Submit</button>
-				<button class="clear">Clear</button>
-			</div>
-
+			<!--<form class="submitPost" method="POST" action="submitPost.php">-->
+					<button class="submit" onclick="getEditorContents()" >Submit</button>
+					<button class="clear">Clear</button>
+				</div>
+			<!--</form> -->
 			<br>
 		</div>
 	</body>

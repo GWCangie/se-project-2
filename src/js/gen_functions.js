@@ -14,3 +14,26 @@ function change1()
     	sb.innerText = plus;
 }
 
+
+//test the output of quill function
+function getEditorContents() 
+{
+    console.log( "Retrieving contents..." );
+    var html = quill.root.innerHTML;
+    console.log( html );
+
+     //using jquery to put editor contents into database
+    $.post(
+        //url section
+        "submitPost.php",
+        //data section
+        {
+            htmlData: html;
+        },
+        //function section
+        function( data, status )
+        {
+            alert( "Data: " + data + "\nStatus: " + status );
+        } 
+    );
+}

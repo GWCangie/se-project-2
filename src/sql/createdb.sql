@@ -3,7 +3,8 @@ CREATE TABLE Post (
 	PostTitle VARCHAR(50) NOT NULL,
 	PostBody VARCHAR(8000) NOT NULL,
 	VoteCount INTEGER,
-	PostDate DATE NOT NULL
+	PostDate DATE NOT NULL,
+	Tag VARCHAR(20)
 );
 
 
