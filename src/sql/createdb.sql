@@ -12,12 +12,13 @@ CREATE TABLE Image (
 	ImageID INTEGER NOT NULL PRIMARY KEY,
 	ImageName VARCHAR(8000) NOT NULL
 );
-
 CREATE TABLE Comment (
 	CommentID INTEGER NOT NULL PRIMARY KEY,
 	CommentBody VARCHAR(140), 
 	VoteCount INTEGER,
-	CommentGif VARCHAR(255)
+	CommentGif VARCHAR(255),
+	CommentDate DATE,
+	CommentTime TIME
 );
 
 CREATE TABLE Video (
