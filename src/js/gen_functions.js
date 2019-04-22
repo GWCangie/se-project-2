@@ -41,7 +41,7 @@ function commentSubmitted(event){
 const monthNames = ["Jan", "Feb", "Mar", "Apr", "May", "Jun",
   "Jul", "Aug", "Sept", "Oct", "Nov", "Dec"
 ];
-
+let commentField = document.querySelector("#comment-box");
 let post_comment = document.querySelector("#comment-button");
 //console.log("comment post button found: "+post_comment);
 if(post_comment){
